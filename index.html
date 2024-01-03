@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personalized Greeting Card </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="wrapper">
+
+        <div class="card">
+
+            <p id="greeting"></p>
+
+            <label for="Name" id="inputField">Enter your name:
+                <input type="text" id="name" name="Name" placeholder="Type your name here......">
+            </label>
+
+            
+            <button id="submit" onclick="submit()">Submit</button>
+            <button id="clearData" onclick="clearData()">Clear</button>
+
+
+        </div>
+
+    </div>
     
-    <label for="Name">Enter your name</label>
-    <input type="text" id="name" name="Name">
-
-    
-    <button id="submitbtn" onclick="save()">Save</button>
-    <button id="submitbtn" onclick="getCard()">Get Card</button>
-    <button id="submitbtn" onclick="clearData()">Clear</button>
-
-    <p id="greeting"></p>
-
     <script src="script.js"></script>
 </body>
 </html>
